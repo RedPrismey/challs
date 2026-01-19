@@ -1,0 +1,15 @@
+[package]
+name = "rusty_rev"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+rand = "0.8"
+ndarray = "0.16"
+
+[profile.release]
+opt-level = "s"
+split-debuginfo = "packed"
+strip = true               # a enlever si trop dur
+overflow-checks = true
+panic = "abort"

@@ -1,0 +1,15 @@
+[package]
+name = "rusty_rev"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+aes = "0.8"
+nix = { version = "0.29", features = ["fs", "process"] }
+
+[profile.release]
+opt-level = "s"
+split-debuginfo = "packed"
+strip = true               # a enlever si trop dur
+overflow-checks = true
+panic = "abort"

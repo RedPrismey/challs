@@ -1,0 +1,8 @@
+services:
+  hack-factory: # remplacer par le nom du chall
+    build: .
+    cgroup: host
+    privileged: true
+    ports:
+    - 31341:31337 # ici pour changer le port host
+

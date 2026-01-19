@@ -1,0 +1,8 @@
+services:
+  asm-runner:
+    build: .
+    cgroup: host
+    privileged: true
+    ports:
+    - 31339:31337 
+

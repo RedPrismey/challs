@@ -1,0 +1,8 @@
+services:
+  chall: # remplacer par le nom du chall
+    build: .
+    cgroup: host
+    privileged: true
+    ports:
+    - 31337:31337 # ici pour changer le port host
+

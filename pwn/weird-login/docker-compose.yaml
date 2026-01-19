@@ -1,0 +1,8 @@
+services:
+  weird-login: # remplacer par le nom du chall
+    build: .
+    cgroup: host
+    privileged: true
+    ports:
+    - 31340:31337 # ici pour changer le port host
+

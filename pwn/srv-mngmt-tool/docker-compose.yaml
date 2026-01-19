@@ -1,0 +1,8 @@
+services:
+  srv-mngmt-tool: # remplacer par le nom du chall
+    build: .
+    cgroup: host
+    privileged: true
+    ports:
+    - 31338:31337 # ici pour changer le port host
+
